@@ -1,0 +1,20 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background: rgb(48, 163, 109);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    background: rgb(126, 199, 169);
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+}
