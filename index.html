@@ -7,7 +7,19 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="welcome">
+            <p>WELCOME</p>
+            <p>Let's play the Dino Game</p>
+            <button id="startButton">PLAY</button>
+        </div>
+
         <canvas id="gameCanvas" width="800" height="300"></canvas>
+        
+        <div id="alertBox">
+            <p>GAME OVER. Do you want to play again?</p>
+            <button onclick="restartGame()">OK</button>
+        </div>
+
         <script src="script.js"></script>
 </body>
 </html>
