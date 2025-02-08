@@ -61,7 +61,7 @@ function updateScore() {
 function updateHighScore() {
     if (score > highScore) {
         highScore = score;
-        localStorage.setItem('highScore', highScore);  // Guardamos el nuevo high score en localStorage
+        localStorage.setItem('highScore', highScore);  
     }
 }
 
@@ -81,19 +81,19 @@ function drawHighScore() {
 
 
 function welcomeGame() {
-    document.getElementById('welcome').style.display = 'block'; // Muestra el mensaje de bienvenida
+    document.getElementById('welcome').style.display = 'block'; 
 }
 
 function startGame() {
-    document.getElementById('welcome').style.display = 'none'; // Oculta el mensaje de bienvenida
-    gameLoop(); // Empieza el juego llamando a gameLoop
+    document.getElementById('welcome').style.display = 'none'; 
+    gameLoop(); 
 }
 
 
 
 function gameLoop() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpiar el canvas
-
+    ctx.clearRect(0, 0, canvas.width, canvas.height); 
+    
     drawDino();
     drawObstacles();
     drawScore();
@@ -105,7 +105,7 @@ function gameLoop() {
         checkCollision();
         updateScore();
         updateHighScore();
-        requestAnimationFrame(gameLoop); // Llama a gameLoop continuamente mientras el juego está en progreso
+        requestAnimationFrame(gameLoop);
     } else {
         ctx.fillStyle = "#022b09";
         ctx.font = "50px Arial";
